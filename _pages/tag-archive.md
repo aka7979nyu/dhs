@@ -1,6 +1,13 @@
 ---
-title: "Posts by Tag"
+title: Writing by tag
 permalink: /tags/
-layout: tags
-author_profile: true
 ---
+
+{% for group in site.tags %}
+## {{ group[0] }}
+{% for post in group[1] %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
+{% endfor %}
+
+[Browse all writing]({{ '/posts/' | relative_url }}).

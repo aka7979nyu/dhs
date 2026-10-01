@@ -1,27 +1,28 @@
-# Minimal Mistakes remote theme starter
+# Ahmed Alharbi — DHS coursework
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+Jekyll course website deployed by GitHub Pages from **master / (root)**.
+The site URL is https://aka7979nyu.github.io/dhs/ and `_config.yml` keeps `baseurl: /dhs`.
 
-Contains basic configuration to get you a site with:
+## Content
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+- `index.html`: project portfolio homepage.
+- `_pages/`: about, writing, archive and error pages.
+- `_posts/`: add real coursework using `YYYY-MM-DD-title.md` with title front matter.
+- `BH_featuremapNEW.html`: published Bahrain Leaflet map. Keep this filename and its four layers, Thunderforest.Outdoors basemap and metric scale bar.
+- `assets/css/site.css`: responsive site styles.
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+The Bahrain assignment blog post is pending; no findings or finished write-up have been added.
+Starter demo posts, placeholder biography and social links have been removed.
 
----
+## Build
 
-## Troubleshooting
+With Ruby and Bundler installed:
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+```sh
+bundle install
+bundle exec jekyll build
+bundle exec jekyll serve
+```
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+Open http://localhost:4000/dhs/. GitHub Pages uses the same `github-pages` dependencies.
+Local layouts and ordinary Liquid/Markdown require no custom plugins or JavaScript build step.

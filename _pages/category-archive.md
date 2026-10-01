@@ -1,6 +1,13 @@
 ---
-title: "Posts by Category"
-layout: categories
+title: Writing by category
 permalink: /categories/
-author_profile: true
 ---
+
+{% for group in site.categories %}
+## {{ group[0] }}
+{% for post in group[1] %}
+- [{{ post.title }}]({{ post.url | relative_url }})
+{% endfor %}
+{% endfor %}
+
+[Browse all writing]({{ '/posts/' | relative_url }}).
