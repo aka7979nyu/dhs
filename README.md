@@ -11,8 +11,7 @@ The site URL is https://aka7979nyu.github.io/dhs/ and `_config.yml` keeps `baseu
 - `BH_featuremapNEW.html`: published Bahrain Leaflet map. Keep this filename and its four layers, Thunderforest.Outdoors basemap and metric scale bar.
 - `assets/css/site.css`: responsive site styles.
 
-The Bahrain assignment blog post is pending; no findings or finished write-up have been added.
-Starter demo posts, placeholder biography and social links have been removed.
+The Bahrain assignment blog post is pending, but website has been redesigned. 
 
 ## Build
 
