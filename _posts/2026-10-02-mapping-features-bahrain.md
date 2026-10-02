@@ -4,8 +4,6 @@ title: "Assignment 1: Mapping Features of Bahrain"
 description: "An interactive GeoNames map and analysis of selected geographic features in Bahrain."
 ---
 
-# Mapping Features of Bahrain
-
 ## Introduction
 
 For this assignment, I chose Bahrain as the country to study using the GeoNames dataset. Bahrain is a small country, but it has many different kinds of places and features. It has cities, villages, islands, hotels, roads, an airport, and many other places. I thought Bahrain would be interesting to map because it is small enough to see patterns clearly, but it still has both physical and human features.
