@@ -12,12 +12,12 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="identity" href="{{ '/' | relative_url }}">Ahmed Alharbi<span>DHS · NYU Abu Dhabi</span></a>
+    <a class="identity" href="{{ '/' | relative_url }}">Ahmed Alharbi<span>CDAD · Data and Human Space · NYU Abu Dhabi</span></a>
     <nav aria-label="Main navigation">
       {% for item in site.data.navigation.main %}<a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a>{% endfor %}
     </nav>
   </header>
   <main id="main" class="wrap" tabindex="-1">{{ content }}</main>
-  <footer class="site-footer wrap"><span>Ahmed Alharbi · DHS coursework</span><a href="https://github.com/aka7979nyu/dhs">View source on GitHub <span aria-hidden="true">↗</span></a></footer>
+  <footer class="site-footer wrap"><span>Ahmed Alharbi · CDAD: Data and Human Space</span><a href="https://github.com/aka7979nyu/dhs">View source on GitHub <span aria-hidden="true">↗</span></a></footer>
 </body>
 </html>
