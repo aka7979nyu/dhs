@@ -2,30 +2,64 @@
 layout: default
 description: "Ahmed Alharbi’s CDAD: Data and Human Space course projects and writing, including an interactive map of Bahrain."
 ---
----
+
 <section class="intro" aria-labelledby="intro-title">
   <p class="eyebrow">CDAD · Data and Human Space</p>
   <h1 id="intro-title">A place for<br>coursework &amp; exploration.</h1>
   <p class="intro-bio">I’m Ahmed Alharbi.<br>{{ site.author.bio }}</p>
   <a class="text-link" href="#projects">Explore my projects <span aria-hidden="true">↓</span></a>
 </section>
+
 <section id="projects" class="projects" aria-labelledby="projects-title">
-  <div class="section-heading"><h2 id="projects-title">Course projects</h2><span class="eyebrow">01 / Interactive mapping</span></div>
+  <div class="section-heading">
+    <h2 id="projects-title">Course projects</h2>
+    <span class="eyebrow">01 / Interactive mapping</span>
+  </div>
+
   <article class="project-card">
     <div class="project-overview">
       <p class="eyebrow">Featured project · Leaflet</p>
-      <h3>Bahrain<br>feature map</h3>
+      <h3>Mapping Features<br>of Bahrain</h3>
       <p>An interactive map with four feature layers: populated places, islands, hotels, and an airport.</p>
-      <a class="button" href="{{ '/BH_featuremapNEW.html' | relative_url }}">Open the Bahrain map <span aria-hidden="true">↗</span></a>
+      <a class="button" href="{{ '/BH_featuremapNEW.html' | relative_url }}">
+        Open the Bahrain map <span aria-hidden="true">↗</span>
+      </a>
     </div>
+
     <div class="project-details">
       <h4>Explore the map</h4>
-      <ul class="features"><li><span>01</span>Four toggleable feature layers</li><li><span>02</span>Thunderforest.Outdoors basemap</li><li><span>03</span>Customized metric scale bar</li></ul>
-      <div class="project-status"><span class="status">Map published</span><p>The accompanying assignment blog post is still to be written.</p></div>
+      <ul class="features">
+        <li><span>01</span>Four toggleable feature layers</li>
+        <li><span>02</span>Thunderforest.Outdoors basemap</li>
+        <li><span>03</span>Customized metric scale bar</li>
+      </ul>
+
+      <div class="project-status">
+        <span class="status">Assignment 1</span>
+        <p>Interactive GeoNames map and analysis of selected geographic features in Bahrain.</p>
+      </div>
     </div>
   </article>
 </section>
+
 <section class="writing-preview" aria-labelledby="writing-title">
-  <div><p class="eyebrow">Course notebook</p><h2 id="writing-title">Writing</h2><p>Project write-ups and coursework reflections.</p></div>
-  <div>{% if site.posts.size > 0 %}{% for post in site.posts limit:3 %}<p><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>{% endfor %}{% else %}<p class="muted">No course posts published yet.<br>The Bahrain map write-up is pending.</p>{% endif %}<a class="text-link" href="{{ '/posts/' | relative_url }}">View writing <span aria-hidden="true">→</span></a></div>
+  <div>
+    <p class="eyebrow">Course notebook</p>
+    <h2 id="writing-title">Writing</h2>
+    <p>Project write-ups and coursework reflections.</p>
+  </div>
+
+  <div>
+    {% if site.posts.size > 0 %}
+      {% for post in site.posts limit:3 %}
+        <p><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+      {% endfor %}
+    {% else %}
+      <p class="muted">Course project posts and reflections will appear here.</p>
+    {% endif %}
+
+    <a class="text-link" href="{{ '/posts/' | relative_url }}">
+      View writing <span aria-hidden="true">→</span>
+    </a>
+  </div>
 </section>
