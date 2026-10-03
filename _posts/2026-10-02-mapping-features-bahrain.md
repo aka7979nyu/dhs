@@ -169,3 +169,5 @@ Because of this, we should not only ask what a map shows. We should also ask whe
 ## Generative AI Statement
 
 I used ChatGPT to help me with organizing the layout and design of the website and helping me with the codes.
+
+READY FOR GRADING
